@@ -6,6 +6,36 @@ body {
 
 /* hamburger menu */
 
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -180px;
+  padding: 50px;
+  padding-top: 125px;
+border-radius: 5px;
+
+
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+ 
+  
+  transform-origin: 0% 0%;
+  transform: translate(100%, 0);
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu img{ 
+position: absolute;
+    height: 100%;
+width: 400px;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    opacity: 0.9;
+
+}
 
 #menuToggle
 {
@@ -14,11 +44,11 @@ body {
   top: 60px;
   right: 60px;
  
-  
   z-index: 1;
   
   -webkit-user-select: none;
   user-select: none;
+
 }
 
 #menuToggle input
@@ -36,6 +66,7 @@ body {
   z-index: 2;
   
   -webkit-touch-callout: none;
+
 }
 
 
@@ -57,6 +88,7 @@ body {
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
               opacity 0.55s ease;
+
 }
 
 #menuToggle span:first-child
@@ -67,6 +99,7 @@ body {
 #menuToggle span:nth-last-child(2)
 {
   transform-origin: 0% 100%;
+
 }
 
 
@@ -75,6 +108,8 @@ body {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
   background: #de1f24;
+
+
 }
 
 
@@ -91,35 +126,7 @@ body {
 }
 
 
-#menu
-{
-  position: absolute;
-  width: 300px;
-  margin: -100px 0 0 -180px;
-  padding: 50px;
-  padding-top: 125px;
-border-radius: 5px;
 
-  list-style-type: none;
-  -webkit-font-smoothing: antialiased;
- 
-  
-  transform-origin: 0% 0%;
-  transform: translate(100%, 0);
-  
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-}
-
-#menu img{ 
-position: absolute;
-    height: 100%;
-width: 400px;
-    top: 0;
-    right: 0;
-    z-index: -1;
-    opacity: 0.9;
-
-}
 
 #menu li
 {
@@ -140,6 +147,14 @@ a:hover, a:visited, a:link, a:active
 #menuToggle input:checked ~ ul
 {
   transform: none;
+  
+}
+
+#menuToggle input:not(:checked) ~ ul
+{
+
+  display: none;
+
 }
 
 
@@ -350,9 +365,11 @@ h5{
 /* Contact Form */
 
 .contactmain {
-  height: 500px;
   display: block;
   position: relative;
+  padding-top: 1000px;
+  width: 30%;
+  margin: 0 auto; 
 }
 
 .form-style-1 {
@@ -363,22 +380,32 @@ h5{
 }
 .form-style-1 li {
   list-style: none;
-  margin-top: 10px padding: 0;
+  margin-top: 20px padding: 20px;
   display: block;
+  padding-top: 10px;
+  width: 30%;
 }
 .form-style-1 label {
   display: block;
   font-weight: bold;
   margin: 0 0 3px 0;
   padding: 0;
+
+
 }
 .form-style-1 input[type="text"], .form-style-1 input[type="email"], textarea, select {
   box-sizing: border-box;
-  border: 1px solid #bebebe;
-  padding: 7px;
-  margin: 0;
+  border: 2px solid #c76616;
+  padding: 15px;
+  margin: 0 auto;
   outline: 0;
+  width: 500px;
+  border-radius: 7px;
 }
+
+
+
+
 . select {
   height: 34px;
   width: 286px;
@@ -389,37 +416,35 @@ h5{
 }
 .field-textarea {
   height: 100px;
-  width: 395px;
+  width: 500px;;
+  margin: 0 auto;
 }
 input[type="submit"] {
-  font-family: 'Muli' sans-serif;
-  background-color: green;
-  border: none;
-  color: white;
-  margin-top: 30px;
+  font-family: 'Poppins', sans-serif;
+  border: 2px solid #c76616;
+  border-radius: 7px; 
+  color: black;
   height: 30px;
   width: 100px;
   text-align: center;
   font-size: 16px;
   font-weight: 600;
-  box-shadow: 0 3px lightgrey;
+  margin: 0 auto;
+ 
+ 
 }
-input[type="submit"]:hover {
-  background-color: darkgreen;
-  box-shadow: none;
-}
+
 input[type="submit"]: {
-  background-color: green;
   box-shadow: 0 2px grey;
   transform: translateY(3px);
 }
 fieldset {
   width: 450px;
   margin: 0 auto;
-  border: 0
+  border: 0;
 }
 .form {
-  bottom: 0;
+   
 }
 .contactinfo {
   padding-top: 50px;
@@ -497,6 +522,7 @@ footer {
 	width: 100%;
 	text-align: center;
 	display: block;
+
 
 	
 }
