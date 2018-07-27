@@ -731,7 +731,12 @@ padding: 0px;
 
   }
 
-
+  .mv {
+  position: relative;
+  
+width: 100%
+height: auto;
+}
  
 
 
