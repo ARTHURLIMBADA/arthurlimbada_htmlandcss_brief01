@@ -615,6 +615,7 @@ footer p {
   top: 0;
 }
 
+.bg 
 
 /* Media Queries */
 
@@ -686,7 +687,7 @@ padding: 0px;
     
     .mbg {
         height: 350px;
-        width: auto;
+        width: 100%;
     }
    
     .tourphoto {
@@ -731,6 +732,7 @@ padding: 0px;
   }
 
 
+ 
 
 
 }
