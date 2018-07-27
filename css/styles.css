@@ -147,7 +147,7 @@ a:hover, a:visited, a:link, a:active
 #menuToggle input:checked ~ ul
 {
   transform: none;
-  
+
 }
 
 #menuToggle input:not(:checked) ~ ul
@@ -192,7 +192,7 @@ h1 {
 }
 
 .suh1 {
-  padding: 420px;
+  padding: 420px 0px;
   font-size: 70px;
   color: #f3f2ed;
 }
@@ -365,10 +365,10 @@ h5{
 /* Contact Form */
 
 .contactmain {
-  display: block;
+
   position: relative;
   padding-top: 1000px;
-  width: 30%;
+
   margin: 0 auto; 
 }
 
@@ -703,7 +703,7 @@ padding: 0px;
     }
 
 
-    
+
     
     
 
