@@ -816,10 +816,12 @@ padding: 0px;
     
     .form-style-1 input[type="text"], .form-style-1 input[type="email"], textarea, select {
 
-  width: 80%;
+  width: 60%;
         
 
 }
+
+
 }
 
 
